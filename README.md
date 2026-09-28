@@ -1,8 +1,10 @@
-# training-data-barriers-statistical-analysis
+# Training Data Barriers and Mitigation Strategies in Weed Detection, Classification, and Segmentation: A Systematic Review and Quantitative Synthesis
 
-Statistical analysis and reproducibility materials for the systematic review of training-data barriers and mitigation strategies in weed computer vision.
+Repository: `training-data-barriers-statistical-analysis`
 
-The source workbook stays unchanged. Each later step reads the previous output and leaves it in place. Running a script is what produces the tables and figures.
+Statistical analysis and reproducibility materials for this systematic review and quantitative synthesis.
+
+The scripts only read the source workbook. The first script writes the analysis-ready tables. The second script reads those tables and writes the statistics. The third script reads the statistics and draws the figures. Each script leaves the earlier files as they are.
 
 ## Questions
 
@@ -18,19 +20,56 @@ Task order is Detection, Segmentation, Classification. The task metrics are Dete
 
 ## Run
 
-Install Python 3.12 or newer and the project packages first. The steps are in [Docs/02_Installation.md](Docs/02_Installation.md). Activate the virtual environment, then run these from the project root. Wait for `Validation status: PASS` before the next command.
+Python 3.12 or newer is required. Operating-system installers are in [Docs/02_Installation.md](Docs/02_Installation.md). From the project root, create the virtual environment, install the packages, then run the three scripts in this order. Each script prints `Validation status: PASS` when that step is good. Start the next script only after that line appears.
+
+macOS or Linux:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv venv
+source .venv/bin/activate
+uv pip install -r requirements.txt
+```
+
+Windows PowerShell:
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+uv venv
+.venv\Scripts\activate
+uv pip install -r requirements.txt
+```
+
+1. Build the analysis-ready tables from the source workbook.
 
 ```bash
 python3 src/01_create_analysis_ready_tables.py
 ```
 
+Tables are written to `results/analysis_ready_tables/`.
+
+2. Build the statistics from those tables.
+
 ```bash
 python3 src/02_create_statistical_results.py
 ```
 
+Tables are written to `results/statistics/`.
+
+3. Draw the figures from the saved statistics.
+
 ```bash
 MPLCONFIGDIR="results/.mplconfig" python3 src/03_create_figures.py
 ```
+
+On Windows PowerShell, set the variable first:
+
+```powershell
+$env:MPLCONFIGDIR = "results/.mplconfig"
+python3 src/03_create_figures.py
+```
+
+Figures are written to `results/figures/pdf/`, `results/figures/png/`, and `results/figures/tiff/`. The pass or fail record for each step is in `results/validation/`.
 
 ## Layout
 
