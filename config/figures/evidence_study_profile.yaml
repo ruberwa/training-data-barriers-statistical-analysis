@@ -1,0 +1,16 @@
+filename: evidence_study_profile
+width_mm: 180
+height_mm: 102
+layout: side_by_side
+outer_frame: true
+tables:
+  master: study_master
+panels:
+  A:
+    letter: A
+    xlabel: Publication year
+    ylabel: Number of studies
+  B:
+    letter: B
+    xlabel: Task
+    ylabel: Dataset size

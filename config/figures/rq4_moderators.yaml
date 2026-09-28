@@ -1,0 +1,18 @@
+filename: rq4_moderators
+width_mm: 180
+height_mm: 190
+layout: tasks
+outer_frame: true
+tables:
+  gains: rq3_study_gains
+  master: study_master
+  environment: rq4_environment
+panels:
+  A:
+    xlabel: Baseline (%)
+    ylabel: Signed gain (pp)
+  B:
+    xlabel: Dataset size
+    ylabel: Signed gain (pp)
+  C:
+    xlabel: Median gain (pp)

@@ -1,0 +1,21 @@
+filename: rq6_synthetic
+width_mm: 210
+height_mm: 140
+layout: single
+card_share: height
+outer_frame: false
+tables:
+  contrast: rq6_adjusted_contrast
+  summary: rq6_method_summary
+  subtypes: rq6_synthetic_subtypes
+subtype_order:
+  - Data Augmentation
+  - Synthetic Data Generation
+subtype_interval: false
+panels:
+  A:
+    kind: synthetic_forest
+    xlabel: Adjusted difference or median gain (pp)
+    zero_label: No difference
+    contrast_label: Synthetic Image Methods
+    family: Synthetic Image Methods

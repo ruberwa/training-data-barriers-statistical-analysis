@@ -1,0 +1,75 @@
+evidence:
+  purpose: Describe the selected studies before the research questions.
+  statistical_tables:
+    - evidence_publication_year
+    - evidence_task
+    - evidence_environment
+    - evidence_country
+    - evidence_dataset_size
+    - evidence_metric
+  figures:
+    - evidence_study_profile
+    - evidence_geography
+
+rq1:
+  question: What training-data barriers are reported, and how do their profiles differ across Detection, Segmentation and Classification?
+  statistical_tables:
+    - rq1_barrier_category
+    - rq1_barrier_type
+    - rq1_barrier_by_task
+    - rq1_barrier_cooccurrence
+    - rq1_task_barrier_test
+    - rq1_task_barrier_counts
+  figures:
+    - rq1_barriers
+
+rq2:
+  question: Which strategies are used for particular barriers, and what relationships characterise current practice?
+  statistical_tables:
+    - rq2_mitigation_category
+    - rq2_mitigation_strategy
+    - rq2_mitigation_by_task
+    - rq2_profile_test
+    - rq2_same_paper_counts
+    - rq2_same_paper_percent
+    - rq2_same_instance
+  figures:
+    - rq2_mitigations
+
+rq3:
+  question: What performance improvements are associated with mitigation strategies within each task?
+  statistical_tables:
+    - rq3_study_gains
+    - rq3_task_synthesis
+  figures:
+    - rq3_gains
+
+rq4:
+  question: To what extent do barrier, mitigation, baseline performance, environment and dataset size explain differences in gain?
+  statistical_tables:
+    - rq4_baseline_and_size
+    - rq4_environment
+    - rq4_mitigation
+    - rq4_barrier
+  figures:
+    - rq4_moderators
+
+rq5:
+  question: How robust and credible are the findings, and where is evidence supported, uncertain or absent?
+  statistical_tables:
+    - rq5_quality
+    - rq5_sensitivity
+    - rq5_leave_one_paper_out
+  figures:
+    - rq5_credibility
+
+rq6:
+  question: Can Synthetic Image Methods statistically compete with other mitigation methods in reported performance gain after accounting for baseline performance?
+  statistical_tables:
+    - rq6_included_papers
+    - rq6_excluded_papers
+    - rq6_method_summary
+    - rq6_adjusted_contrast
+    - rq6_synthetic_subtypes
+  figures:
+    - rq6_synthetic
