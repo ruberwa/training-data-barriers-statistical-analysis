@@ -1,0 +1,22 @@
+filename: rq1_barriers
+width_mm: 340
+height_mm: 160
+layout: side_by_side
+card_share: height
+outer_frame: false
+tables:
+  types: rq1_barrier_type
+  categories: rq1_barrier_category
+  profile: barrier_profile
+panels:
+  A:
+    letter: A
+    kind: barrier_bars
+    xlabel: Number of studies
+    donut: true
+  B:
+    letter: B
+    kind: task_dots
+    xlabel: Task
+    vertical_grid: true
+    horizontal_grid: true

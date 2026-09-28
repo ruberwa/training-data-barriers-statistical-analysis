@@ -1,0 +1,34 @@
+filename: rq5_credibility
+width_mm: 240
+height_mm: 185
+layout: stacked
+card_share: width
+outer_frame: false
+exclude_scenarios:
+  - mean_within_study
+tables:
+  quality: rq5_quality
+  sensitivity: rq5_sensitivity
+criteria:
+  - Independent Test Set
+  - Data Leakage Prevented
+  - Appropriate Metrics
+  - Limitations Discussed
+  - Related Samples Separated
+judgments:
+  - Yes
+  - Partial
+  - Unclear
+  - "No"
+  - Not reported
+panels:
+  A:
+    letter: A
+    kind: quality_heatmap
+    xlabel: Evidence-quality judgment
+    colorbar: Studies (%)
+  B:
+    letter: B
+    kind: sensitivity_forest
+    xlabel: Median gain (pp)
+    counts: true

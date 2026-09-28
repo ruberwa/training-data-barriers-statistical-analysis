@@ -1,0 +1,85 @@
+output:
+  formats:
+    pdf:
+      enabled: true
+      folder: pdf
+    png:
+      enabled: true
+      folder: png
+      dpi: 300
+    tiff:
+      enabled: true
+      folder: tiff
+      dpi: 600
+      compression: tiff_adobe_deflate
+  bbox_inches: tight
+  pad_inches: 0.05
+
+display:
+  minimum_studies: 5
+
+geography:
+  no_study_color: "#EEF1F2"
+  border_color: "#FFFFFF"
+  border_width: 0.25
+  low_color: "#DDEFE8"
+  high_color: "#1A5344"
+  not_reported_color: "#B8BCC2"
+
+publication:
+  width_mm: 180
+  maximum_height_mm: 230
+
+theme:
+  font_family: Arial
+  axis_label_pt: 8.5
+  tick_label_pt: 7
+  legend_pt: 7
+  panel_label_pt: 11
+  background: "#FFFFFF"
+  alternate_panel_background: "#F4F5F6"
+  neutral_primary: "#355C7D"
+  neutral_secondary: "#7A8793"
+  primary_green: "#2B7F68"
+  secondary_orange: "#FC8028"
+  accent_red: "#CE482D"
+  imaging_blue: "#0072B2"
+  grid: "#E3E3E3"
+  text: "#4D4D4D"
+  heatmap_low: "#F3F7F5"
+  quality_low: "#EEF5F1"
+
+palette:
+  tasks:
+    Detection: "#2B7F68"
+    Segmentation: "#FC8028"
+    Classification: "#CE482D"
+  barriers:
+    DATA: "#2B7F68"
+    ENVIRONMENTAL: "#FC8028"
+    IMAGING: "#0072B2"
+    TECHNICAL: "#CE482D"
+  mitigations:
+    Architectural: "#2B7F68"
+    Data-Centric: "#FC8028"
+  quality:
+    Yes: "#2B7F68"
+    Partial: "#FC8028"
+    Unclear: "#F4C95D"
+    No: "#CE482D"
+    "Not reported": "#B8BCC2"
+
+card:
+  edgecolor: black
+  linewidth: 0.9
+  outer_frame: false
+
+grid:
+  color: "#B0B0B0"
+  vertical_width: 1.05
+  horizontal_width: 1.0
+
+donut:
+  width: 0.68
+  pctdistance: 0.66
+  hole: 0.32

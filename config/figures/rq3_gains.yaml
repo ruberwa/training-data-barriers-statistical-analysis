@@ -1,0 +1,12 @@
+filename: rq3_gains
+width_mm: 300
+height_mm: 210
+layout: tasks
+outer_frame: true
+tables:
+  gains: rq3_study_gains
+  synthesis: rq3_task_synthesis
+panels:
+  A:
+    letter: A
+    xlabel: Signed gain (pp)

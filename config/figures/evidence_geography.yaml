@@ -1,0 +1,11 @@
+filename: evidence_geography
+width_mm: 180
+height_mm: 140
+layout: map
+outer_frame: true
+tables:
+  country: evidence_country
+  master: study_master
+panels:
+  A:
+    letter: A

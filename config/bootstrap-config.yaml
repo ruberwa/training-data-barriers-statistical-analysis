@@ -1,0 +1,6 @@
+seed: 20260903
+repetitions: 10000
+permutation_repetitions: 10000
+statistic: median
+interval: percentile
+level: 0.95
