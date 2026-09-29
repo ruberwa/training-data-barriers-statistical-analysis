@@ -17,7 +17,7 @@ Or download the ZIP from [the repository page](https://github.com/ruberwa/traini
 
 ## Where to look
 
-- **Dataset:** `data/Ready Analysis dataset.xlsx`. This workbook is in the clone and in the ZIP. It is the source record of the included studies. The first script reads it.
+- **Dataset:** `data/Ready Analysis dataset.xlsx`. This workbook is in the clone and in the ZIP. It is the source record of the included studies. The first script reads it. The sheets are described in [data/README.md](data/README.md).
 - **Figures:** `results/figures/`. PDF, PNG, and TIFF copies are in `results/figures/pdf/`, `results/figures/png/`, and `results/figures/tiff/`. These folders appear after the third script runs. They are not in the clone or the ZIP.
 - `config/`: task metrics, bootstrap settings, and figure settings
 - `src/`: the three scripts, in the order under Run
